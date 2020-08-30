@@ -1,10 +1,8 @@
 ﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
 using GothicMapViewer.Models.Map;
-using System;
+using GothicMapViewer.Models.Map.Enums;
 using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Input;
 
 namespace GothicMapViewer.ViewModels
 {
@@ -16,19 +14,23 @@ namespace GothicMapViewer.ViewModels
         public MapViewModel(MapModel mapModel)
         {
             this.mapModel = mapModel;
-
-            SetMarkerData();
-            SetMap();
+            LoadMapData(MapType.KHORINIS);   
         }
 
-        private void SetMap()
+        private void LoadMapData(MapType mapType)
         {
-            Map = mapModel.GetMapFileName();
+            SetMarkerData(MapType.KHORINIS);
+            SetMap(MapType.KHORINIS);
         }
 
-        private void SetMarkerData()
+        private void SetMap(MapType mapType)
         {
-            var markersData = mapModel.GetMarkers();
+            Map = mapModel.GetMapFileName(mapType);
+        }
+
+        private void SetMarkerData(MapType mapType)
+        {
+            var markersData = mapModel.GetMarkers(mapType);
 
             foreach (var item in markersData.Herbs)
             {

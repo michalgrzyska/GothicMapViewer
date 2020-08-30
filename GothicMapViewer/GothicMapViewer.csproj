@@ -81,6 +81,7 @@
     <Compile Include="Marker.xaml.cs">
       <DependentUpon>Marker.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Map\Enums\MapType.cs" />
     <Compile Include="Models\Map\MapModel.cs" />
     <Compile Include="Models\Map\MarkerData.cs" />
     <Compile Include="Models\Map\Markers.cs" />
@@ -127,7 +128,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Data\markers.json" />
+    <None Include="Data\khorinis_markers.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -137,12 +138,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Resource Include="Maps\khorinis.jpg" />
+    <Resource Include="Maps\valley_of_mines.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="khorinis.jpg" />
+    <Resource Include="Maps\khorinis.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

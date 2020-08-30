@@ -9,8 +9,12 @@
     Width="1300"
     Height="810"
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
-    mc:Ignorable="d" ResizeMode="CanMinimize">
+    ResizeMode="CanMinimize"
+    mc:Ignorable="d">
     <Grid Background="Black">
-        <local:Map Width="1000" Height="750" Margin="282,10,10,0"/>
+        <local:Map
+            Width="1000"
+            Height="750"
+            Margin="282,10,10,0" />
     </Grid>
 </Window>
