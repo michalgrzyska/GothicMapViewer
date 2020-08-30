@@ -1,0 +1,21 @@
+﻿<UserControl
+    x:Class="GothicMapViewer.Marker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GothicMapViewer"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    HorizontalAlignment="Left"
+    VerticalAlignment="Top"
+    mc:Ignorable="d">
+    <Grid>
+        <Ellipse
+            Width="15"
+            Height="15"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Fill="#FFF4F4F5"
+            RenderTransformOrigin="-13.533,-14"
+            Stroke="Black" />
+    </Grid>
+</UserControl>
