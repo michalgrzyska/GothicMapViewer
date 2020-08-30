@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models.Map;
 using GothicMapViewer.Models.Map.Enums;
 using System.Collections.ObjectModel;
@@ -8,12 +9,13 @@ namespace GothicMapViewer.ViewModels
 {
     public class MapViewModel : ViewModelBase
     {
-        private readonly MapModel mapModel;
+        private readonly IMapRepository mapRepository;
         public string Map { get; set; }
         public ObservableCollection<MarkerViewModel> Markers { get; set; } = new ObservableCollection<MarkerViewModel>();
-        public MapViewModel(MapModel mapModel)
+
+        public MapViewModel(IMapRepository mapRepository)
         {
-            this.mapModel = mapModel;
+            this.mapRepository = mapRepository;
             LoadMapData(MapType.KHORINIS);   
         }
 
@@ -25,12 +27,12 @@ namespace GothicMapViewer.ViewModels
 
         private void SetMap(MapType mapType)
         {
-            Map = mapModel.GetMapFileName(mapType);
+            Map = mapRepository.GetMapFileName(mapType);
         }
 
         private void SetMarkerData(MapType mapType)
         {
-            var markersData = mapModel.GetMarkers(mapType);
+            var markersData = mapRepository.GetMarkers(mapType);
 
             foreach (var item in markersData.Herbs)
             {

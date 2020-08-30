@@ -1,22 +1,55 @@
 ﻿using GalaSoft.MvvmLight;
+using GothicMapViewer.Interfaces;
+using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models.Main;
+using System;
+using System.Collections.ObjectModel;
 
 namespace GothicMapViewer.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        private readonly TranslationService translationService;
+        private readonly ITranslationService translationService;
+        private readonly IMainRepository mainRepository;
+        private string selectedMap = "";
+
+        public object SelectedMap 
+        {
+            get 
+            {
+                return selectedMap;
+            }
+            set
+            {
+                MapSelectionChanged((MapSelection)value);
+            }
+        }
 
         public Translations Translations { get; set; }
-        public MainViewModel(TranslationService translationService)
+        public ObservableCollection<MapSelection> MapSelection { get; set; }
+
+        public MainViewModel(ITranslationService translationService, IMainRepository mainRepository)
         {
             this.translationService = translationService;
+            this.mainRepository = mainRepository;
+
             ApplyTranslations();
+            SetMapSelection();
         }
 
         private void ApplyTranslations()
         {
             Translations = translationService.GetTranslations();
+        }
+
+        private void SetMapSelection()
+        {
+            MapSelection = new ObservableCollection<MapSelection>(mainRepository.GetMapSelections());
+        }
+
+        public void MapSelectionChanged(MapSelection map)
+        {
+            Console.WriteLine(map.Type);
         }
     }
 }

@@ -20,13 +20,17 @@
             Width="268"
             Margin="10,75,0,0"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top" />
+            VerticalAlignment="Top"
+            DisplayMemberPath="Name"
+            ItemsSource="{Binding MapSelection}"
+            SelectedItem="{Binding SelectedMap}"/>
         <Label
             Width="268"
             Margin="10,31,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="{Binding Translations.ChooseMap}"
-            Foreground="White" FontSize="20" />
+            FontSize="20"
+            Foreground="White" />
     </Grid>
 </Window>

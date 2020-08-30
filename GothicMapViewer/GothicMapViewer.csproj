@@ -75,16 +75,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Interfaces\ITranslationService.cs" />
+    <Compile Include="Interfaces\Repositories\IMainRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMapRepository.cs" />
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
     <Compile Include="Marker.xaml.cs">
       <DependentUpon>Marker.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\MainRepository.cs" />
+    <Compile Include="Models\Main\MapSelection.cs" />
     <Compile Include="Services\TranslationService.cs" />
     <Compile Include="Models\Translations.cs" />
     <Compile Include="Models\Map\Enums\MapType.cs" />
-    <Compile Include="Models\Map\MapModel.cs" />
+    <Compile Include="Repositories\MapRepository.cs" />
     <Compile Include="Models\Map\MarkerData.cs" />
     <Compile Include="Models\Map\Markers.cs" />
     <Compile Include="ViewModels\MapViewModel.cs" />
@@ -147,8 +152,6 @@
   <ItemGroup>
     <Resource Include="Maps\khorinis.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Main\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

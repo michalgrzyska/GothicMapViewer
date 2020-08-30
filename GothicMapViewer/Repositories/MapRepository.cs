@@ -1,10 +1,11 @@
-﻿using GothicMapViewer.Models.Map.Enums;
+﻿using GothicMapViewer.Interfaces.Repositories;
+using GothicMapViewer.Models.Map.Enums;
 using Newtonsoft.Json;
 using System.IO;
 
 namespace GothicMapViewer.Models.Map
 {
-    public class MapModel
+    public class MapRepository : IMapRepository
     {
         public Markers GetMarkers(MapType mapType)
         {
