@@ -1,5 +1,6 @@
 ﻿using CommonServiceLocator;
 using GalaSoft.MvvmLight.Ioc;
+using GothicMapViewer.Models.Map;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,15 @@ namespace GothicMapViewer.ViewModels
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<MarkerViewModel>();
+            SimpleIoc.Default.Register(() => new MapViewModel(new MapModel()));
+        }
+
+        public MapViewModel MapViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<MapViewModel>();
+            }
         }
 
         public MarkerViewModel MarkerViewModel

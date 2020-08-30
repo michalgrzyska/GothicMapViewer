@@ -6,17 +6,11 @@
     xmlns:local="clr-namespace:GothicMapViewer"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
-    Width="1200"
-    Height="770"
+    Width="1300"
+    Height="810"
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
-    mc:Ignorable="d">
-    <Grid>
-        <ItemsControl ItemsSource="{Binding Markers}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <local:Marker Margin="{Binding Margin}" />
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+    mc:Ignorable="d" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <local:Map Width="1000" Height="750" Margin="282,10,10,0"/>
     </Grid>
 </Window>

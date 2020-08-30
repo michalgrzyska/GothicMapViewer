@@ -1,0 +1,34 @@
+﻿<UserControl
+    x:Class="GothicMapViewer.Map"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GothicMapViewer"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="750"
+    d:DesignWidth="1000"
+    DataContext="{Binding MapViewModel, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
+    <Grid>
+        <Image
+            Width="1000"
+            Height="750"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="{Binding Map}" />
+        <ItemsControl ItemsSource="{Binding Markers}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button ToolTip="{Binding NameWithDescription}">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <local:Marker Margin="{Binding Margin}" />
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</UserControl>
