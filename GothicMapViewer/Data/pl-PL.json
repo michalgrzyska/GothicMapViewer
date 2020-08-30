@@ -1,0 +1,8 @@
+{
+  "chooseMap": "Wybierz mapê",
+  "maps": {
+    "khorinis": "Khorinis",
+    "valleyOfMines": "Górnicza dolina",
+    "jarkendar":  "Jarkendar"
+  }
+}

@@ -1,5 +1,6 @@
 ﻿using CommonServiceLocator;
 using GalaSoft.MvvmLight.Ioc;
+using GothicMapViewer.Models.Main;
 using GothicMapViewer.Models.Map;
 
 namespace GothicMapViewer.ViewModels
@@ -9,8 +10,9 @@ namespace GothicMapViewer.ViewModels
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+            TranslationService translationService = new TranslationService();
 
-            SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register(() => new MainViewModel(translationService));
             SimpleIoc.Default.Register<MarkerViewModel>();
             SimpleIoc.Default.Register(() => new MapViewModel(new MapModel()));
         }

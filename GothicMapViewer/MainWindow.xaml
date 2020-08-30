@@ -16,5 +16,17 @@
             Width="1000"
             Height="750"
             Margin="282,10,10,0" />
+        <ComboBox
+            Width="268"
+            Margin="10,75,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Label
+            Width="268"
+            Margin="10,31,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="{Binding Translations.ChooseMap}"
+            Foreground="White" FontSize="20" />
     </Grid>
 </Window>
