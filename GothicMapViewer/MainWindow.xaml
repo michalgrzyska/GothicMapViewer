@@ -11,32 +11,7 @@
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
     ResizeMode="CanMinimize"
     mc:Ignorable="d">
-    <Window.Resources>
-        <Style TargetType="{x:Type ListBox}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type ListBox}">
-                        <Grid Width="Auto" Height="Auto">
-                            <Border x:Name="Border" CornerRadius="0,0,0,0"/>
-                            <ScrollViewer Focusable="false" IsTabStop="False" HorizontalScrollBarVisibility="Disabled">
-                                <StackPanel IsItemsHost="true"/>
-                            </ScrollViewer>
-                        </Grid>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsEnabled" Value="false">
-                                <Setter Property="Background" Value="Yellow"/>
-                            </Trigger>
-                            <Trigger Property="IsGrouping" Value="true">
-                                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="BorderThickness" Value="0,0,0,0"/>
-            <Setter Property="Background" Value="White"/>
-        </Style>
-    </Window.Resources>
+
     <Grid Background="Black">
         <local:Map
             Width="1000"
@@ -60,12 +35,17 @@
             FontSize="20"
             Foreground="White" />
         <ListBox
+            Name="legendListBox"
             Width="268"
             Height="452"
             Margin="10,210,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            ItemsSource="{Binding Legend}" BorderBrush="{x:Null}" Background="Transparent" Foreground="White" IsEnabled="False">
+            Background="Transparent"
+            BorderBrush="{x:Null}"
+            Foreground="White"
+            ItemsSource="{Binding Legend}"
+            SelectionMode="Multiple">
 
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -73,7 +53,7 @@
                         Margin="1"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Top">
-                        <TextBlock Text="{Binding Name}" Foreground="{Binding Color}"/>
+                        <TextBlock Foreground="{Binding Color}" Text="{Binding Name}" />
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>

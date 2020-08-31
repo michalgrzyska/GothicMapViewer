@@ -7,6 +7,7 @@ using GothicMapViewer.Models.Map.Enums;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows.Controls;
 using System.Windows.Documents;
 
 namespace GothicMapViewer.ViewModels
@@ -16,6 +17,20 @@ namespace GothicMapViewer.ViewModels
         private readonly ITranslationService translationService;
         private readonly IMainRepository mainRepository;
         private string selectedMap = "";
+        private object selectedLegend;
+
+        public object SelectedLegend
+        {
+            get
+            {
+                return selectedLegend;
+            }
+            set
+            {
+                selectedLegend = value;
+                Console.WriteLine(value);
+            }
+        }
 
         public object SelectedMap 
         {
