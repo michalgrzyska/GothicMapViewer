@@ -17,7 +17,7 @@ namespace GothicMapViewer.ViewModels
         private readonly IMapRepository mapRepository;
         private List<Marker> markers;
 
-        public string Map { get; set; }
+        public string Map { get; private set; }
         public ObservableCollection<Marker> Markers { get; private set; } = new ObservableCollection<Marker>();
 
         public MapViewModel(IMapRepository mapRepository)
@@ -25,6 +25,7 @@ namespace GothicMapViewer.ViewModels
             this.mapRepository = mapRepository;
             LoadMapData(MapType.KHORINIS);
             Messenger.Default.Register<SendMapTypeMessage>(this, this.ChangeMap);
+            Messenger.Default.Register<SendLegendFilterDataMessage>(this, this.SetMarkerFilters);
         }
 
         private void LoadMapData(MapType mapType)
@@ -62,6 +63,12 @@ namespace GothicMapViewer.ViewModels
         private void ChangeMap(SendMapTypeMessage map)
         {
             LoadMapData(map.MapSelection.Type);
+        }
+
+        private void SetMarkerFilters(SendLegendFilterDataMessage message)
+        {
+            markers = mapRepository.GetMarkersWithAppliedFilters(markers, message.MapLegendItems);
+            SetMarkers(markers);
         }
     }
 }

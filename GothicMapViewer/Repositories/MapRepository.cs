@@ -5,6 +5,7 @@ using GothicMapViewer.Repositories.Helpers;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows;
 
 namespace GothicMapViewer.Models.Map
@@ -42,6 +43,18 @@ namespace GothicMapViewer.Models.Map
                         Visible = true
                     });
                 }
+            }
+
+            return markers;
+        }
+
+        public List<Marker> GetMarkersWithAppliedFilters(List<Marker> markers, List<MapLegend> mapLegends)
+        {
+            var filter = mapLegends.Select(x => x.Name).ToList();
+
+            foreach (var item in markers)
+            {
+                item.Visible = filter.Contains(item.ParentName);
             }
 
             return markers;

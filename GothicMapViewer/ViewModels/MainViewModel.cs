@@ -93,6 +93,7 @@ namespace GothicMapViewer.ViewModels
             {
                 System.Collections.IList items = (System.Collections.IList)selectedItems;
                 var collection = items.Cast<MapLegend>().ToList();
+                MessageSender.Send(new SendLegendFilterDataMessage(collection));
             });
         }
     }

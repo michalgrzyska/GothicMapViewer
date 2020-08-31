@@ -89,6 +89,7 @@
     </Compile>
     <Compile Include="Models\Main\MapLegend.cs" />
     <Compile Include="Models\Map\MarkerType.cs" />
+    <Compile Include="Models\Messages\SendLegendFilterDataMessage.cs" />
     <Compile Include="Models\Messages\SendLegendListMessage.cs" />
     <Compile Include="Models\Messages\SendMapTypeMessage.cs" />
     <Compile Include="Repositories\Helpers\ColorConverter.cs" />
