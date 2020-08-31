@@ -20,13 +20,23 @@
         <ItemsControl ItemsSource="{Binding Markers}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Button ToolTip="{Binding NameWithDescription}">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <local:Marker Margin="{Binding Margin}" />
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
+                    <Canvas>
+                        <Button ToolTip="{Binding NameWithDescription}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Ellipse
+                                        Name="MarkerPoint"
+                                        Width="15"
+                                        Height="15"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Fill="{Binding Color}"
+                                        Stroke="Black"
+                                        Margin="{Binding Margin}"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Canvas>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

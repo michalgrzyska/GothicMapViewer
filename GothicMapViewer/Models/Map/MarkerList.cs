@@ -2,7 +2,7 @@
 
 namespace GothicMapViewer.Models.Map
 {
-    public class Markers
+    public class MarkerList
     {
         public List<MarkerData> Herbs { get; set; }
     }

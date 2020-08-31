@@ -81,9 +81,7 @@
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Marker.xaml.cs">
-      <DependentUpon>Marker.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Repositories\Helpers\ColorConverter.cs" />
     <Compile Include="Repositories\MainRepository.cs" />
     <Compile Include="Models\Main\MapSelection.cs" />
     <Compile Include="Services\TranslationService.cs" />
@@ -91,10 +89,10 @@
     <Compile Include="Models\Map\Enums\MapType.cs" />
     <Compile Include="Repositories\MapRepository.cs" />
     <Compile Include="Models\Map\MarkerData.cs" />
-    <Compile Include="Models\Map\Markers.cs" />
+    <Compile Include="Models\Map\MarkerList.cs" />
     <Compile Include="ViewModels\MapViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="ViewModels\MarkerViewModel.cs" />
+    <Compile Include="Models\Map\Marker.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -109,10 +107,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Map.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Marker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -135,6 +129,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Data\valley_of_mines_markers.json" />
     <None Include="Data\khorinis_markers.json" />
     <None Include="Data\pl-PL.json" />
     <None Include="packages.config" />

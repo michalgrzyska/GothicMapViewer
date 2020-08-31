@@ -5,7 +5,7 @@ namespace GothicMapViewer.Interfaces.Repositories
 {
     public interface IMapRepository
     {
-        Markers GetMarkers(MapType mapType);
+        MarkerList GetMarkers(MapType mapType);
         string GetMapFileName(MapType mapType);
     }
 }

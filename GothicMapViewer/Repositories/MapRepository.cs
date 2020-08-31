@@ -7,11 +7,11 @@ namespace GothicMapViewer.Models.Map
 {
     public class MapRepository : IMapRepository
     {
-        public Markers GetMarkers(MapType mapType)
+        public MarkerList GetMarkers(MapType mapType)
         {
             var mapFileNamePartial = GetMapPartialFileName(mapType);
             string jsonFile = File.ReadAllText($"../../Data/{mapFileNamePartial}_markers.json");
-            return JsonConvert.DeserializeObject<Markers>(jsonFile);
+            return JsonConvert.DeserializeObject<MarkerList>(jsonFile);
         }
 
         public string GetMapFileName(MapType mapType)

@@ -23,7 +23,8 @@
             VerticalAlignment="Top"
             DisplayMemberPath="Name"
             ItemsSource="{Binding MapSelection}"
-            SelectedItem="{Binding SelectedMap}"/>
+            SelectedItem="{Binding SelectedMap}"
+            SelectedIndex="0"/>
         <Label
             Width="268"
             Margin="10,31,0,0"

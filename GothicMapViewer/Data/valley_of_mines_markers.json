@@ -3,29 +3,29 @@
     {
       "title": "Szczaw królewski",
       "description": "Szczaw królewski opis",
-      "positionX": "10",
-      "positionY": "10",
+      "positionX": "20",
+      "positionY": "20",
       "color": "#FF0000"
     },
     {
       "title": "Ogniste ziele",
       "description": "Ogniste ziele opis",
-      "positionX": "50",
-      "positionY": "50",
+      "positionX": "60",
+      "positionY": "60",
       "color": "#00FF00"
     },
     {
       "title": "Roślina lecznicza",
       "description": "Roślina lecznicza opis",
-      "positionX": "100",
-      "positionY": "100",
+      "positionX": "200",
+      "positionY": "200",
       "color": "#0000FF"
     },
     {
       "title": "Ogniste ziele",
       "description": "Ogniste ziele opis",
-      "positionX": "150",
-      "positionY": "150",
+      "positionX": "350",
+      "positionY": "350",
       "color": "#00FF00"
     },
     {
@@ -38,7 +38,7 @@
     {
       "title": "Ogniste ziele",
       "description": "Ogniste ziele opis",
-      "positionX": "800",
+      "positionX": "250",
       "positionY": "250",
       "color": "#00FF00"
     }

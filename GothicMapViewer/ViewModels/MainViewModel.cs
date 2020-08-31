@@ -1,7 +1,9 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Messaging;
 using GothicMapViewer.Interfaces;
 using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models.Main;
+using GothicMapViewer.Models.Map.Enums;
 using System;
 using System.Collections.ObjectModel;
 
@@ -49,7 +51,7 @@ namespace GothicMapViewer.ViewModels
 
         public void MapSelectionChanged(MapSelection map)
         {
-            Console.WriteLine(map.Type);
+            Messenger.Default.Send(map.Type);
         }
     }
 }

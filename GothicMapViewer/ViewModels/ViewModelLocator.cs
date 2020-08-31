@@ -19,7 +19,6 @@ namespace GothicMapViewer.ViewModels
             SimpleIoc.Default.Register<IMainRepository, MainRepository>();
 
             SimpleIoc.Default.Register<MainViewModel>();
-            SimpleIoc.Default.Register<MarkerViewModel>();
             SimpleIoc.Default.Register<MapViewModel>();
         }
 
@@ -28,14 +27,6 @@ namespace GothicMapViewer.ViewModels
             get
             {
                 return ServiceLocator.Current.GetInstance<MapViewModel>();
-            }
-        }
-
-        public MarkerViewModel MarkerViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<MarkerViewModel>();
             }
         }
 
