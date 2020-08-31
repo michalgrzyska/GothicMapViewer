@@ -28,11 +28,11 @@
                                         Name="MarkerPoint"
                                         Width="15"
                                         Height="15"
+                                        Margin="{Binding Margin}"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Top"
                                         Fill="{Binding Color}"
-                                        Stroke="Black"
-                                        Margin="{Binding Margin}"/>
+                                        Stroke="Black" />
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>

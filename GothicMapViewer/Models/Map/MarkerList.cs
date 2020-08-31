@@ -4,6 +4,6 @@ namespace GothicMapViewer.Models.Map
 {
     public class MarkerList
     {
-        public List<MarkerData> Herbs { get; set; }
+        public List<MarkerType> ItemType { get; set; }
     }
 }

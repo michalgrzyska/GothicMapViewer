@@ -1,5 +1,7 @@
 {
   "chooseMap": "Wybierz mapê",
+  "legend": "Legenda",
+  "info": "Gothic 2 Map Viewer by Ervin",
   "maps": {
     "khorinis": "Khorinis",
     "valleyOfMines": "Górnicza dolina",

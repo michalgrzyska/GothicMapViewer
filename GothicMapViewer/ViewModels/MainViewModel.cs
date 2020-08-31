@@ -5,7 +5,9 @@ using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models.Main;
 using GothicMapViewer.Models.Map.Enums;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows.Documents;
 
 namespace GothicMapViewer.ViewModels
 {
@@ -29,6 +31,7 @@ namespace GothicMapViewer.ViewModels
 
         public Translations Translations { get; set; }
         public ObservableCollection<MapSelection> MapSelection { get; set; }
+        public ObservableCollection<MapLegend> Legend { get; set; }
 
         public MainViewModel(ITranslationService translationService, IMainRepository mainRepository)
         {
@@ -37,6 +40,8 @@ namespace GothicMapViewer.ViewModels
 
             ApplyTranslations();
             SetMapSelection();
+
+            Messenger.Default.Register<List<MapLegend>>(this, this.DisplayLegend);
         }
 
         private void ApplyTranslations()
@@ -52,6 +57,12 @@ namespace GothicMapViewer.ViewModels
         public void MapSelectionChanged(MapSelection map)
         {
             Messenger.Default.Send(map.Type);
+        }
+
+        private void DisplayLegend(List<MapLegend> mapLegends)
+        {
+            Legend = new ObservableCollection<MapLegend>(mapLegends);
+            RaisePropertyChanged("Legend");
         }
     }
 }

@@ -81,6 +81,8 @@
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Main\MapLegend.cs" />
+    <Compile Include="Models\Map\MarkerType.cs" />
     <Compile Include="Repositories\Helpers\ColorConverter.cs" />
     <Compile Include="Repositories\MainRepository.cs" />
     <Compile Include="Models\Main\MapSelection.cs" />

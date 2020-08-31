@@ -1,46 +1,67 @@
 {
-  "herbs": [
+  "itemType": [
     {
       "title": "Szczaw królewski",
-      "description": "Szczaw królewski opis",
-      "positionX": "10",
-      "positionY": "10",
-      "color": "#FF0000"
+      "color": "#FF0000",
+      "markers": [
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "10",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "30",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "50",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "70",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "90",
+          "positionY": "10"
+        }
+      ]
     },
     {
-      "title": "Ogniste ziele",
-      "description": "Ogniste ziele opis",
-      "positionX": "50",
-      "positionY": "50",
-      "color": "#00FF00"
-    },
-    {
-      "title": "Roślina lecznicza",
-      "description": "Roślina lecznicza opis",
-      "positionX": "100",
-      "positionY": "100",
-      "color": "#0000FF"
-    },
-    {
-      "title": "Ogniste ziele",
-      "description": "Ogniste ziele opis",
-      "positionX": "150",
-      "positionY": "150",
-      "color": "#00FF00"
-    },
-    {
-      "title": "Ogniste ziele",
-      "description": "Ogniste ziele opis",
-      "positionX": "200",
-      "positionY": "200",
-      "color": "#00FF00"
-    },
-    {
-      "title": "Ogniste ziele",
-      "description": "Ogniste ziele opis",
-      "positionX": "800",
-      "positionY": "250",
-      "color": "#00FF00"
+      "title": "Goblinie jagody",
+      "color": "#00FF00",
+      "markers": [
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "20",
+          "positionY": "20"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "30",
+          "positionY": "40"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "50",
+          "positionY": "70"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "70",
+          "positionY": "90"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "90",
+          "positionY": "110"
+        }
+      ]
     }
   ]
+
 }

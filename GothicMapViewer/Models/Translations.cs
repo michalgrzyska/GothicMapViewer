@@ -3,6 +3,8 @@
     public class Translations
     {
         public string ChooseMap { get; set; }
+        public string Legend { get; set; }
+        public string Info { get; set; }
         public TranslationsMaps Maps { get; set; }
     }
 

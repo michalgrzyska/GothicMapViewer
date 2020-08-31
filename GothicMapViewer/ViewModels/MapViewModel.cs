@@ -2,8 +2,11 @@
 using GalaSoft.MvvmLight.Messaging;
 using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models;
+using GothicMapViewer.Models.Main;
+using GothicMapViewer.Models.Map;
 using GothicMapViewer.Models.Map.Enums;
 using GothicMapViewer.Repositories.Helpers;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
 
@@ -41,17 +44,38 @@ namespace GothicMapViewer.ViewModels
             var markersData = mapRepository.GetMarkers(mapType);
             var markers = new ObservableCollection<Marker>();
 
-            foreach (var item in markersData.Herbs)
+            DisplayLegend(markersData);
+
+            foreach (var type in markersData.ItemType)
             {
-                markers.Add(new Marker()
+                foreach (var item in type.Markers)
                 {
-                    Margin = new Thickness(item.PositionX - 7, item.PositionY - 7, 0, 0),
-                    NameWithDescription = item.Title + (item.Description != "" ? $":\n{item.Description}" : ""),
+                    markers.Add(new Marker()
+                    {
+                        Margin = new Thickness(item.PositionX - 7, item.PositionY - 7, 0, 0),
+                        NameWithDescription = type.Title + (item.Description != "" ? $":\n{item.Description}" : ""),
+                        Color = ColorConverter.ConvertHexToBrush(type.Color)
+                    });
+                }
+            }
+
+            Markers = markers;
+        }
+
+        private void DisplayLegend(MarkerList markerList)
+        {
+            List<MapLegend> mapLegend = new List<MapLegend>();
+
+            foreach (var item in markerList.ItemType)
+            {
+                mapLegend.Add(new MapLegend()
+                {
+                    Name = item.Title,
                     Color = ColorConverter.ConvertHexToBrush(item.Color)
                 });
             }
 
-            Markers = markers;
+            Messenger.Default.Send(mapLegend);
         }
 
         private void ChangeMap(MapType map)
