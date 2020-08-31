@@ -2,85 +2,66 @@
 using GalaSoft.MvvmLight.Messaging;
 using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models;
-using GothicMapViewer.Models.Main;
 using GothicMapViewer.Models.Map;
 using GothicMapViewer.Models.Map.Enums;
+using GothicMapViewer.Models.Messages;
 using GothicMapViewer.Repositories.Helpers;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows;
+using System.Linq;
 
 namespace GothicMapViewer.ViewModels
 {
     public class MapViewModel : ViewModelBase
     {
         private readonly IMapRepository mapRepository;
+        private List<Marker> markers;
 
         public string Map { get; set; }
-        public ObservableCollection<Marker> Markers { get; set; } = new ObservableCollection<Marker>();
+        public ObservableCollection<Marker> Markers { get; private set; } = new ObservableCollection<Marker>();
 
         public MapViewModel(IMapRepository mapRepository)
         {
             this.mapRepository = mapRepository;
             LoadMapData(MapType.KHORINIS);
-            Messenger.Default.Register<MapType>(this, this.ChangeMap);
+            Messenger.Default.Register<SendMapTypeMessage>(this, this.ChangeMap);
         }
 
         private void LoadMapData(MapType mapType)
         {
             SetMarkerData(mapType);
             SetMap(mapType);
-            RaisePropertyChanged("Map");
-            RaisePropertyChanged("Markers");
         }
 
         private void SetMap(MapType mapType)
         {
             Map = mapRepository.GetMapFileName(mapType);
+            RaisePropertyChanged("Map");
+        }
+
+        private void SetMarkers(List<Marker> markers)
+        {
+            var markersFiltered = markers.Where(x => x.Visible == true);
+            Markers = new ObservableCollection<Marker>(markersFiltered);
+            RaisePropertyChanged("Markers");
         }
 
         private void SetMarkerData(MapType mapType)
         {
-            var markersData = mapRepository.GetMarkers(mapType);
-            var markers = new ObservableCollection<Marker>();
-
-            DisplayLegend(markersData);
-
-            foreach (var type in markersData.ItemType)
-            {
-                foreach (var item in type.Markers)
-                {
-                    markers.Add(new Marker()
-                    {
-                        Margin = new Thickness(item.PositionX - 7, item.PositionY - 7, 0, 0),
-                        NameWithDescription = type.Title + (item.Description != "" ? $":\n{item.Description}" : ""),
-                        Color = ColorConverter.ConvertHexToBrush(type.Color)
-                    });
-                }
-            }
-
-            Markers = markers;
+            DisplayLegend(mapRepository.GetMarkers(mapType));
+            markers = mapRepository.GetMarkersDisplayList(mapType);
+            SetMarkers(markers);
         }
 
         private void DisplayLegend(MarkerList markerList)
         {
-            List<MapLegend> mapLegend = new List<MapLegend>();
-
-            foreach (var item in markerList.ItemType)
-            {
-                mapLegend.Add(new MapLegend()
-                {
-                    Name = item.Title,
-                    Color = ColorConverter.ConvertHexToBrush(item.Color)
-                });
-            }
-
-            Messenger.Default.Send(mapLegend);
+            var mapLegend = mapRepository.GetMapLegends(markerList);
+            MessageSender.Send(new SendLegendListMessage(mapLegend));
         }
 
-        private void ChangeMap(MapType map)
+        private void ChangeMap(SendMapTypeMessage map)
         {
-            LoadMapData(map);
+            LoadMapData(map.MapSelection.Type);
         }
     }
 }

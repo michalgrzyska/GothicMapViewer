@@ -8,5 +8,7 @@ namespace GothicMapViewer.Models
         public Thickness Margin { get; set; }
         public string NameWithDescription { get; set; }
         public Brush Color { get; set; }
+        public string ParentName { get; set; }
+        public bool Visible { get; set; }
     }
 }

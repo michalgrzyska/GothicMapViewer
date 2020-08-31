@@ -4,9 +4,14 @@ using GothicMapViewer.Interfaces;
 using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models.Main;
 using GothicMapViewer.Models.Map.Enums;
+using GothicMapViewer.Models.Messages;
+using GothicMapViewer.Repositories.Helpers;
+using Prism.Commands;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.Design;
+using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Documents;
 
@@ -48,6 +53,8 @@ namespace GothicMapViewer.ViewModels
         public ObservableCollection<MapSelection> MapSelection { get; set; }
         public ObservableCollection<MapLegend> Legend { get; set; }
 
+        public DelegateCommand<object> SelectedLegendChangedCommand { get; set; }
+
         public MainViewModel(ITranslationService translationService, IMainRepository mainRepository)
         {
             this.translationService = translationService;
@@ -55,8 +62,13 @@ namespace GothicMapViewer.ViewModels
 
             ApplyTranslations();
             SetMapSelection();
+            SetEvents();
 
-            Messenger.Default.Register<List<MapLegend>>(this, this.DisplayLegend);
+            Messenger.Default.Register<SendLegendListMessage>(this, this.DisplayLegend);
+        }
+        public void MapSelectionChanged(MapSelection map)
+        {
+            MessageSender.Send(new SendMapTypeMessage(map));
         }
 
         private void ApplyTranslations()
@@ -69,15 +81,19 @@ namespace GothicMapViewer.ViewModels
             MapSelection = new ObservableCollection<MapSelection>(mainRepository.GetMapSelections());
         }
 
-        public void MapSelectionChanged(MapSelection map)
+        private void DisplayLegend(SendLegendListMessage mapLegend)
         {
-            Messenger.Default.Send(map.Type);
+            Legend = new ObservableCollection<MapLegend>(mapLegend.MapLegendItems);
+            RaisePropertyChanged("Legend");
         }
 
-        private void DisplayLegend(List<MapLegend> mapLegends)
+        private void SetEvents()
         {
-            Legend = new ObservableCollection<MapLegend>(mapLegends);
-            RaisePropertyChanged("Legend");
+            SelectedLegendChangedCommand = new DelegateCommand<object>((selectedItems) =>
+            {
+                System.Collections.IList items = (System.Collections.IList)selectedItems;
+                var collection = items.Cast<MapLegend>().ToList();
+            });
         }
     }
 }
