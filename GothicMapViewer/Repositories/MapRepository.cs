@@ -3,10 +3,12 @@ using GothicMapViewer.Models.Main;
 using GothicMapViewer.Models.Map.Enums;
 using GothicMapViewer.Repositories.Helpers;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace GothicMapViewer.Models.Map
 {
@@ -28,10 +30,11 @@ namespace GothicMapViewer.Models.Map
             return JsonConvert.DeserializeObject<MarkerList>(jsonFile);
         }
 
-        public string GetMapFileName(MapType mapType)
+        public BitmapImage GetMapFileName(MapType mapType)
         {
             var mapFileNamePartial = GetMapPartialFileName(mapType);
-            return $"{mapFolder}/{mapFileNamePartial}.jpg";
+            var x = new BitmapImage(new Uri($"{mapFolder}/{mapFileNamePartial}.jpg", UriKind.Relative));
+            return x;
         }
 
         public List<Marker> GetMarkersDisplayList(MapType mapType)

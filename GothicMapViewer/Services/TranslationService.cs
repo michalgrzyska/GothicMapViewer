@@ -1,6 +1,7 @@
 ﻿using GothicMapViewer.Interfaces;
 using GothicMapViewer.Models.Map;
 using GothicMapViewer.Models.Map.Enums;
+using GothicMapViewer.Repositories.Helpers;
 using Newtonsoft.Json;
 using System.IO;
 using System.Text;
@@ -11,7 +12,8 @@ namespace GothicMapViewer.Models.Main
     {
         public Translations GetTranslations()
         {
-            string jsonFile = File.ReadAllText($"../../Data/pl-PL.json", Encoding.Default);
+            string translationFolder = PathFinder.TraslationFolder;
+            string jsonFile = File.ReadAllText($"{translationFolder}/pl-PL.json", Encoding.Default);
             return JsonConvert.DeserializeObject<Translations>(jsonFile);
         }
 

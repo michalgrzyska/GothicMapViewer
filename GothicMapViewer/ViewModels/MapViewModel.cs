@@ -9,6 +9,7 @@ using GothicMapViewer.Repositories.Helpers;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Media.Imaging;
 
 namespace GothicMapViewer.ViewModels
 {
@@ -17,7 +18,7 @@ namespace GothicMapViewer.ViewModels
         private readonly IMapRepository mapRepository;
         private List<Marker> markers;
 
-        public string Map { get; private set; }
+        public BitmapImage Map { get; private set; }
         public ObservableCollection<Marker> Markers { get; private set; } = new ObservableCollection<Marker>();
 
         public MapViewModel(IMapRepository mapRepository)
