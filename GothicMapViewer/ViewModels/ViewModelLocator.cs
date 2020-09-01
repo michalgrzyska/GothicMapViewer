@@ -12,9 +12,9 @@ namespace GothicMapViewer.ViewModels
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-            TranslationService translationService = new TranslationService();
 
             SimpleIoc.Default.Register<ITranslationService, TranslationService>();
+
             SimpleIoc.Default.Register<IMapRepository, MapRepository>();
             SimpleIoc.Default.Register<IMainRepository, MainRepository>();
 

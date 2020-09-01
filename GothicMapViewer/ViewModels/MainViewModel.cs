@@ -3,17 +3,12 @@ using GalaSoft.MvvmLight.Messaging;
 using GothicMapViewer.Interfaces;
 using GothicMapViewer.Interfaces.Repositories;
 using GothicMapViewer.Models.Main;
-using GothicMapViewer.Models.Map.Enums;
 using GothicMapViewer.Models.Messages;
 using GothicMapViewer.Repositories.Helpers;
 using Prism.Commands;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.Design;
 using System.Linq;
-using System.Windows.Controls;
-using System.Windows.Documents;
 
 namespace GothicMapViewer.ViewModels
 {

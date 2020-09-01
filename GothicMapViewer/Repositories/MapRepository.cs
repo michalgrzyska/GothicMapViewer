@@ -12,17 +12,26 @@ namespace GothicMapViewer.Models.Map
 {
     public class MapRepository : IMapRepository
     {
+        private string dataFolder;
+        private string mapFolder;
+
+        public MapRepository()
+        {
+            dataFolder = PathFinder.DataFolder;
+            mapFolder = PathFinder.MapFolder;
+        }
+
         public MarkerList GetMarkers(MapType mapType)
         {
             var mapFileNamePartial = GetMapPartialFileName(mapType);
-            string jsonFile = File.ReadAllText($"../../Data/{mapFileNamePartial}_markers.json");
+            string jsonFile = File.ReadAllText($"{dataFolder}/{mapFileNamePartial}_markers.json");
             return JsonConvert.DeserializeObject<MarkerList>(jsonFile);
         }
 
         public string GetMapFileName(MapType mapType)
         {
             var mapFileNamePartial = GetMapPartialFileName(mapType);
-            return $"maps/{mapFileNamePartial}.jpg";
+            return $"{mapFolder}/{mapFileNamePartial}.jpg";
         }
 
         public List<Marker> GetMarkersDisplayList(MapType mapType)
