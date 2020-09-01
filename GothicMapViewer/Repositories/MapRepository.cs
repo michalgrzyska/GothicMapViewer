@@ -25,16 +25,33 @@ namespace GothicMapViewer.Models.Map
 
         public MarkerList GetMarkers(MapType mapType)
         {
+            string extension = "markers.json";
             var mapFileNamePartial = GetMapPartialFileName(mapType);
-            string jsonFile = File.ReadAllText($"{dataFolder}/{mapFileNamePartial}_markers.json");
-            return JsonConvert.DeserializeObject<MarkerList>(jsonFile);
+            try
+            {
+                string jsonFile = File.ReadAllText($"{dataFolder}/{mapFileNamePartial}_{extension}");
+                return JsonConvert.DeserializeObject<MarkerList>(jsonFile);
+            }
+            catch
+            {
+                MessageBox.Show($"Couldn't open data file {dataFolder}/{mapFileNamePartial}_{extension}.\nApplication may not display data properly.");
+                return new MarkerList();
+            }
         }
 
         public BitmapImage GetMapFileName(MapType mapType)
         {
             var mapFileNamePartial = GetMapPartialFileName(mapType);
-            var x = new BitmapImage(new Uri($"{mapFolder}/{mapFileNamePartial}.jpg", UriKind.Relative));
-            return x;
+
+            try
+            {
+                return new BitmapImage(new Uri($"{mapFolder}/{mapFileNamePartial}.jpg", UriKind.Relative));
+            }
+            catch
+            {
+                MessageBox.Show($"Couldn't open translation file {mapFolder}/{mapFileNamePartial}.jpg.\nApplication may not display data properly.");
+                return new BitmapImage();
+            }
         }
 
         public List<Marker> GetMarkersDisplayList(MapType mapType)

@@ -1,10 +1,11 @@
 ﻿using GothicMapViewer.Interfaces;
-using GothicMapViewer.Models.Map;
 using GothicMapViewer.Models.Map.Enums;
 using GothicMapViewer.Repositories.Helpers;
 using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Text;
+using System.Windows;
 
 namespace GothicMapViewer.Models.Main
 {
@@ -12,9 +13,19 @@ namespace GothicMapViewer.Models.Main
     {
         public Translations GetTranslations()
         {
+            string fileName = "pl-PL.json";
             string translationFolder = PathFinder.TraslationFolder;
-            string jsonFile = File.ReadAllText($"{translationFolder}/pl-PL.json", Encoding.Default);
-            return JsonConvert.DeserializeObject<Translations>(jsonFile);
+            try
+            {
+                string jsonFile = File.ReadAllText($"{translationFolder}/{fileName}", Encoding.Default);
+                return JsonConvert.DeserializeObject<Translations>(jsonFile);
+            }
+            catch
+            {
+                MessageBox.Show($"Couldn't open translation file {translationFolder}/{fileName}.");
+                Application.Current.Shutdown();
+                return new Translations();
+            }
         }
 
         public string GetTranslationForMap(MapType map)
