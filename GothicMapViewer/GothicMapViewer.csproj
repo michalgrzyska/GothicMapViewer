@@ -189,12 +189,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Maps\valley_of_mines.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Maps\khorinis.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -207,14 +201,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Maps\jarkendar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icon.png" />
+    <Resource Include="Maps\jarkendar.jpg" />
+    <Resource Include="Maps\khorinis.jpg" />
+    <Resource Include="Maps\valley_of_mines.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
   <Target Name="App_config_AfterCompile" AfterTargets="AfterCompile" Condition="Exists('App.$(Configuration).config')">

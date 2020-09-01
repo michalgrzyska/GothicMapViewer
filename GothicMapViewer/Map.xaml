@@ -26,8 +26,8 @@
                                 <ControlTemplate>
                                     <Ellipse
                                         Name="MarkerPoint"
-                                        Width="15"
-                                        Height="15"
+                                        Width="10"
+                                        Height="10"
                                         Margin="{Binding Margin}"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Top"

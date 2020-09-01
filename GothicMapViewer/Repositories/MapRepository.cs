@@ -50,7 +50,7 @@ namespace GothicMapViewer.Models.Map
                 {
                     markers.Add(new Marker()
                     {
-                        Margin = new Thickness(item.PositionX - 7, item.PositionY - 7, 0, 0),
+                        Margin = new Thickness(item.PositionX - 5, item.PositionY - 5, 0, 0),
                         NameWithDescription = type.Title + (item.Description != "" ? $":\n{item.Description}" : ""),
                         Color = ColorConverter.ConvertHexToBrush(type.Color),
                         ParentName = type.Title,

@@ -2,7 +2,7 @@
   "itemType": [
     {
       "title": "Szczaw królewski",
-      "color": "#FFEE00",
+      "color": "#FF0000",
       "markers": [
         {
           "description": "Na polu za kamiennym kręgiem (po rozmowie z Zurisem)",
@@ -63,7 +63,7 @@
     },
     {
       "title": "Smoczy korzeń",
-      "color": "#8C00FF",
+      "color": "#00FF00",
       "markers": [
         {
           "description": "Na lewo od drogi do latarni, obok Miki  (po rozmowie z Zurisem)",
@@ -114,7 +114,7 @@
     },
     {
       "title": "Goblinie jagody",
-      "color": "#1FBF24",
+      "color": "#0000FF",
       "markers": [
         {
           "description": "Na środku łąki  (po rozmowie z Zurisem)",
@@ -175,6 +175,114 @@
           "description": "W wieży Xardasa",
           "positionX": "473",
           "positionY": "538"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica życia",
+      "color": "#FFF700",
+      "markers": [
+        {
+          "description": "+5 życia",
+          "positionX": "404",
+          "positionY": "470"
+        },
+        {
+          "description": "+10 życia",
+          "positionX": "536",
+          "positionY": "615"
+        },
+        {
+          "description": "+15 życia",
+          "positionX": "743",
+          "positionY": "680"
+        },
+        {
+          "description": "+15 życia",
+          "positionX": "769",
+          "positionY": "588"
+        },
+        {
+          "description": "+15 życia",
+          "positionX": "772",
+          "positionY": "281"
+        },
+        {
+          "description": "+10 życia",
+          "positionX": "736",
+          "positionY": "263"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "898",
+          "positionY": "257"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "949",
+          "positionY": "251"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "842",
+          "positionY": "164"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "898",
+          "positionY": "122"
+        },
+        {
+          "description": "+15 życia",
+          "positionX": "775",
+          "positionY": "55"
+        },
+        {
+          "description": "+10 życia",
+          "positionX": "750",
+          "positionY": "118"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "524",
+          "positionY": "134"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "477",
+          "positionY": "199"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica zręczności",
+      "color": "#00FFDD",
+      "markers": [
+        {
+          "description": "+4 zręczności",
+          "positionX": "626",
+          "positionY": "511"
+        },
+        {
+          "description": "+2 zręczności",
+          "positionX": "592",
+          "positionY": "534"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica walki bronią dwuręczną",
+      "color": "#9000FF",
+      "markers": [
+        {
+          "description": "+4 broń dwuręczna",
+          "positionX": "638",
+          "positionY": "96"
+        },
+        {
+          "description": "+2 broń dwuręczna",
+          "positionX": "804",
+          "positionY": "224"
         }
       ]
     }
