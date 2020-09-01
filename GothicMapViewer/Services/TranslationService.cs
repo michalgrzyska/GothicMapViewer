@@ -15,17 +15,9 @@ namespace GothicMapViewer.Models.Main
         {
             string fileName = "pl-PL.json";
             string translationFolder = PathFinder.TraslationFolder;
-            try
-            {
-                string jsonFile = File.ReadAllText($"{translationFolder}/{fileName}", Encoding.Default);
-                return JsonConvert.DeserializeObject<Translations>(jsonFile);
-            }
-            catch
-            {
-                MessageBox.Show($"Couldn't open translation file {translationFolder}/{fileName}.");
-                Application.Current.Shutdown();
-                return new Translations();
-            }
+            string jsonFile = File.ReadAllText($"{translationFolder}/{fileName}", Encoding.Default);
+
+            return JsonConvert.DeserializeObject<Translations>(jsonFile);
         }
 
         public string GetTranslationForMap(MapType map)

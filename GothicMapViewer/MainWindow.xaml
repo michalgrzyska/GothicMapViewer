@@ -10,6 +10,7 @@
     Width="1300"
     Height="810"
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
+    Icon="icon.png"
     ResizeMode="CanMinimize"
     mc:Ignorable="d">
 
@@ -46,11 +47,10 @@
             BorderBrush="{x:Null}"
             Foreground="White"
             ItemsSource="{Binding Legend}"
-            SelectionMode="Multiple"
-            >
+            SelectionMode="Multiple">
             <ie:Interaction.Triggers>
                 <ie:EventTrigger EventName="SelectionChanged">
-                    <ie:InvokeCommandAction Command="{Binding SelectedLegendChangedCommand}"  CommandParameter="{Binding ElementName=legendListBox, Path=SelectedItems}"/>
+                    <ie:InvokeCommandAction Command="{Binding SelectedLegendChangedCommand}" CommandParameter="{Binding ElementName=legendListBox, Path=SelectedItems}" />
                 </ie:EventTrigger>
             </ie:Interaction.Triggers>
             <ListBox.ItemTemplate>
