@@ -49,7 +49,7 @@ namespace GothicMapViewer.Models.Map
             }
             catch
             {
-                MessageBox.Show($"Couldn't open translation file {mapFolder}/{mapFileNamePartial}.jpg.\nApplication may not display data properly.");
+                MessageBox.Show($"Couldn't open map file {mapFolder}/{mapFileNamePartial}.jpg.\nApplication may not display data properly.");
                 return new BitmapImage();
             }
         }
