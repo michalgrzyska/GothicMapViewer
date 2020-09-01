@@ -111,6 +111,72 @@
           "positionY": "540"
         }
       ]
+    },
+    {
+      "title": "Goblinie jagody",
+      "color": "#1FBF24",
+      "markers": [
+        {
+          "description": "Na środku łąki  (po rozmowie z Zurisem)",
+          "positionX": "301",
+          "positionY": "335"
+        },
+        {
+          "description": "Na łące na północ od od kamiennego kręgu",
+          "positionX": "387",
+          "positionY": "473"
+        },
+        {
+          "description": "Lewo od drogi do latarni, za drzewem",
+          "positionX": "372",
+          "positionY": "280"
+        },
+        {
+          "description": "Pomiędzy drzewami, niedaleko martwego ciała",
+          "positionX": "555",
+          "positionY": "454"
+        },
+        {
+          "description": "Przy drodze do tawerny, przed jaskinią goblinów",
+          "positionX": "606",
+          "positionY": "446"
+        },
+        {
+          "description": "Na zachód od jaskini Sagitty, zachodnia strona przy drzewie",
+          "positionX": "674",
+          "positionY": "353"
+        },
+        {
+          "description": "Przy wejściu do czarnego trolla",
+          "positionX": "645",
+          "positionY": "115"
+        },
+        {
+          "description": "Północna strona drzewa przy owcach Akila",
+          "positionX": "475",
+          "positionY": "331"
+        },
+        {
+          "description": "Północno-wschodni kraniec doliny, przy skale",
+          "positionX": "463",
+          "positionY": "397"
+        },
+        {
+          "description": "Na kamieniu przed półką skalną",
+          "positionX": "913",
+          "positionY": "464"
+        },
+        {
+          "description": "Przy bandytach",
+          "positionX": "488",
+          "positionY": "513"
+        },
+        {
+          "description": "W wieży Xardasa",
+          "positionX": "473",
+          "positionY": "538"
+        }
+      ]
     }
   ]
 
