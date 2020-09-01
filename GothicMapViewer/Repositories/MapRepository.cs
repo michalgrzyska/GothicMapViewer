@@ -39,7 +39,7 @@ namespace GothicMapViewer.Models.Map
             }
         }
 
-        public BitmapImage GetMapFileName(MapType mapType)
+        public BitmapImage GetMapFile(MapType mapType)
         {
             var mapFileNamePartial = GetMapPartialFileName(mapType);
 

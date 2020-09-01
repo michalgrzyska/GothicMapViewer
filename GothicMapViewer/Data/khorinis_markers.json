@@ -2,63 +2,113 @@
   "itemType": [
     {
       "title": "Szczaw królewski",
-      "color": "#FF0000",
+      "color": "#FFEE00",
       "markers": [
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "10",
-          "positionY": "10"
+          "description": "Na polu za kamiennym kręgiem (po rozmowie z Zurisem)",
+          "positionX": "397",
+          "positionY": "471"
         },
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "30",
-          "positionY": "10"
+          "description": "Przy odgałęzieniu",
+          "positionX": "396",
+          "positionY": "398"
         },
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "50",
-          "positionY": "10"
+          "description": "Nad jaskinią cieniostwora",
+          "positionX": "249",
+          "positionY": "254"
         },
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "70",
-          "positionY": "10"
+          "description": "Obok Niclasa na wzgórzu",
+          "positionX": "360",
+          "positionY": "340"
         },
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "90",
-          "positionY": "10"
+          "description": "Na południe od kręgu, koło drzewa",
+          "positionX": "471",
+          "positionY": "226"
+        },
+        {
+          "description": "W kamiennym kręgu, przy północno-wchodniej kolumnadzie",
+          "positionX": "476",
+          "positionY": "206"
+        },
+        {
+          "description": "Na cmentarzu, przy nagrobku",
+          "positionX": "660",
+          "positionY": "400"
+        },
+        {
+          "description": "W krypcie w lewym skrzydle",
+          "positionX": "834",
+          "positionY": "423"
+        },
+        {
+          "description": "Za trollami, obok marwego ciała",
+          "positionX": "776",
+          "positionY": "669"
+        },
+        {
+          "description": "Za czarnym trollem",
+          "positionX": "621",
+          "positionY": "91"
+        },
+        {
+          "description": "W ukrytej jaskini (misja z runą), w lewej odnodze",
+          "positionX": "779",
+          "positionY": "61"
         }
       ]
     },
     {
-      "title": "Goblinie jagody",
-      "color": "#00FF00",
+      "title": "Smoczy korzeń",
+      "color": "#8C00FF",
       "markers": [
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "20",
-          "positionY": "20"
+          "description": "Na lewo od drogi do latarni, obok Miki  (po rozmowie z Zurisem)",
+          "positionX": "320",
+          "positionY": "349"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "30",
-          "positionY": "40"
+          "description": "Przy latarni od strony morza",
+          "positionX": "201",
+          "positionY": "280"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "50",
-          "positionY": "70"
+          "description": "Przy pniu, za domem Bustera",
+          "positionX": "657",
+          "positionY": "506"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "70",
-          "positionY": "90"
+          "description": "Obok magicznego golema, na kamieniu",
+          "positionX": "752",
+          "positionY": "329"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "90",
-          "positionY": "110"
+          "description": "Południowa część pnia, na północ od obozu Groma",
+          "positionX": "791",
+          "positionY": "601"
+        },
+        {
+          "description": "Północna część pnia, przy schodach",
+          "positionX": "685",
+          "positionY": "633"
+        },
+        {
+          "description": "Na drzewie od północy",
+          "positionX": "342",
+          "positionY": "258"
+        },
+        {
+          "description": "Na pniu zwiędłego drzewa",
+          "positionX": "442",
+          "positionY": "243"
+        },
+        {
+          "description": "W wieży Xardasa",
+          "positionX": "482",
+          "positionY": "540"
         }
       ]
     }

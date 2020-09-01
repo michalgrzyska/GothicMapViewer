@@ -37,7 +37,7 @@ namespace GothicMapViewer.ViewModels
 
         private void SetMap(MapType mapType)
         {
-            Map = mapRepository.GetMapFileName(mapType);
+            Map = mapRepository.GetMapFile(mapType);
             RaisePropertyChanged("Map");
         }
 

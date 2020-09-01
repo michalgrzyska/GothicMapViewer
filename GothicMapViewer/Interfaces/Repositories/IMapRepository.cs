@@ -10,7 +10,7 @@ namespace GothicMapViewer.Interfaces.Repositories
     public interface IMapRepository
     {
         MarkerList GetMarkers(MapType mapType);
-        BitmapImage GetMapFileName(MapType mapType);
+        BitmapImage GetMapFile(MapType mapType);
         List<MapLegend> GetMapLegends(MarkerList markerList);
         List<Marker> GetMarkersDisplayList(MapType mapType);
         List<Marker> GetMarkersWithAppliedFilters(List<Marker> markers, List<MapLegend> mapLegends);

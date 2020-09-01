@@ -1,0 +1,67 @@
+{
+  "itemType": [
+    {
+      "title": "Szczaw królewski",
+      "color": "#FF0000",
+      "markers": [
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "10",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "30",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "50",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "70",
+          "positionY": "10"
+        },
+        {
+          "description": "Opis szczawiu królewskiego",
+          "positionX": "90",
+          "positionY": "10"
+        }
+      ]
+    },
+    {
+      "title": "Goblinie jagody",
+      "color": "#00FF00",
+      "markers": [
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "20",
+          "positionY": "20"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "30",
+          "positionY": "40"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "50",
+          "positionY": "70"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "70",
+          "positionY": "90"
+        },
+        {
+          "description": "Opis goblinich jagód",
+          "positionX": "90",
+          "positionY": "110"
+        }
+      ]
+    }
+  ]
+
+}
