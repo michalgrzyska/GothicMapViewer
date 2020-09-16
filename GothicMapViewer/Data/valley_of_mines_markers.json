@@ -1,67 +1,243 @@
 {
   "itemType": [
     {
-      "title": "Szczaw królewski",
-      "color": "#FF0000",
-      "markers": [
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "100",
-          "positionY": "100"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "130",
-          "positionY": "110"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "150",
-          "positionY": "110"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "170",
-          "positionY": "110"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "190",
-          "positionY": "110"
-        }
-      ]
-    },
-    {
       "title": "Goblinie jagody",
       "color": "#00FF00",
       "markers": [
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "120",
-          "positionY": "120"
+          "description": "Nad jeziorem",
+          "positionX": "327",
+          "positionY": "410"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "130",
-          "positionY": "140"
+          "description": "W skarbie kamiennego smoka",
+          "positionX": "783",
+          "positionY": "669"
+        }
+      ]
+    },
+    {
+      "title": "Rdest polny",
+      "color": "#7D7D7D",
+      "markers": [
+        {
+          "description": "2 sztuki",
+          "positionX": "230",
+          "positionY": "259"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "150",
-          "positionY": "170"
+          "description": "",
+          "positionX": "355",
+          "positionY": "201"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "170",
-          "positionY": "190"
+          "description": "",
+          "positionX": "306",
+          "positionY": "271"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "190",
-          "positionY": "1110"
+          "description": "",
+          "positionX": "303",
+          "positionY": "301"
+        },
+        {
+          "description": "",
+          "positionX": "308",
+          "positionY": "356"
+        },
+        {
+          "description": "",
+          "positionX": "399",
+          "positionY": "278"
+        },
+        {
+          "description": "",
+          "positionX": "489",
+          "positionY": "167"
+        },
+        {
+          "description": "",
+          "positionX": "440",
+          "positionY": "317"
+        },
+        {
+          "description": "",
+          "positionX": "558",
+          "positionY": "235"
+        },
+        {
+          "description": "",
+          "positionX": "523",
+          "positionY": "506"
+        },
+        {
+          "description": "",
+          "positionX": "534",
+          "positionY": "595"
+        },
+        {
+          "description": "",
+          "positionX": "653",
+          "positionY": "250"
+        },
+        {
+          "description": "",
+          "positionX": "653",
+          "positionY": "412"
+        },
+        {
+          "description": "",
+          "positionX": "635",
+          "positionY": "453"
+        },
+        {
+          "description": "",
+          "positionX": "662",
+          "positionY": "519"
+        },
+        {
+          "description": "2 sztuki",
+          "positionX": "765",
+          "positionY": "342"
+        },
+        {
+          "description": "",
+          "positionX": "691",
+          "positionY": "542"
+        },
+        {
+          "description": "",
+          "positionX": "680",
+          "positionY": "559"
+        },
+        {
+          "description": "",
+          "positionX": "747",
+          "positionY": "660"
+        },
+        {
+          "description": "",
+          "positionX": "770",
+          "positionY": "647"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica życia",
+      "color": "#FFF700",
+      "markers": [
+        {
+          "description": "+5 życia",
+          "positionX": "569",
+          "positionY": "476"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "618",
+          "positionY": "456"
+        },
+        {
+          "description": "+5 życia",
+          "positionX": "600",
+          "positionY": "308"
+        },
+        {
+          "description": "+10 życia",
+          "positionX": "588",
+          "positionY": "313"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica zręczności",
+      "color": "#00FFDD",
+      "markers": [
+        {
+          "description": "+4 zręczności",
+          "positionX": "763",
+          "positionY": "675"
+        },
+        {
+          "description": "+2 zręczności",
+          "positionX": "612",
+          "positionY": "407"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica many",
+      "color": "#1E00FF",
+      "markers": [
+        {
+          "description": "+4 mana",
+          "positionX": "172",
+          "positionY": "343"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica walki bronią jednoręczną",
+      "color": "#FFA200",
+      "markers": [
+        {
+          "description": "+2 broń jednoręczna",
+          "positionX": "260",
+          "positionY": "376"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica łuczników",
+      "color": "#FF5900",
+      "markers": [
+        {
+          "description": "+4 strzelanie z łuku",
+          "positionX": "288",
+          "positionY": "386"
+        },
+        {
+          "description": "+2 strzelanie z łuku",
+          "positionX": "782",
+          "positionY": "544"
+        },
+        {
+          "description": "+2 strzelanie z łuku",
+          "positionX": "779",
+          "positionY": "681"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica kuszników",
+      "color": "#B002A1",
+      "markers": [
+        {
+          "description": "+4 strzelanie z kuszy",
+          "positionX": "330",
+          "positionY": "403"
+        },
+        {
+          "description": "+2 strzelanie z kuszy",
+          "positionX": "744",
+          "positionY": "526"
+        }
+      ]
+    },
+    {
+      "title": "Stara kamienna tablica",
+      "color": "#FFFFFF",
+      "markers": [
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "367",
+          "positionY": "448"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "480",
+          "positionY": "582"
         }
       ]
     }
   ]
-
 }

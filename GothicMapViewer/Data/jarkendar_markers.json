@@ -5,63 +5,311 @@
       "color": "#FF0000",
       "markers": [
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "10",
-          "positionY": "10"
+          "description": "Za sarkofagiem przy sługach Kruka",
+          "positionX": "735",
+          "positionY": "248"
         },
         {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "30",
-          "positionY": "10"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "50",
-          "positionY": "10"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "70",
-          "positionY": "10"
-        },
-        {
-          "description": "Opis szczawiu królewskiego",
-          "positionX": "90",
-          "positionY": "10"
+          "description": "Na przeciwko domu uzdrowicieli, na kolumnie",
+          "positionX": "797",
+          "positionY": "568"
         }
       ]
     },
     {
-      "title": "Goblinie jagody",
-      "color": "#00FF00",
+      "title": "Rdest polny",
+      "color": "#7D7D7D",
       "markers": [
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "20",
-          "positionY": "20"
+          "description": "",
+          "positionX": "197",
+          "positionY": "293"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "30",
-          "positionY": "40"
+          "description": "",
+          "positionX": "421",
+          "positionY": "622"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "50",
-          "positionY": "70"
+          "description": "2 sztuki",
+          "positionX": "401",
+          "positionY": "693"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "70",
-          "positionY": "90"
+          "description": "",
+          "positionX": "686",
+          "positionY": "503"
         },
         {
-          "description": "Opis goblinich jagód",
-          "positionX": "90",
-          "positionY": "110"
+          "description": "",
+          "positionX": "738",
+          "positionY": "387"
+        },
+        {
+          "description": "",
+          "positionX": "761",
+          "positionY": "343"
+        },
+        {
+          "description": "",
+          "positionX": "812",
+          "positionY": "283"
+        },
+        {
+          "description": "",
+          "positionX": "773",
+          "positionY": "453"
+        },
+        {
+          "description": "",
+          "positionX": "771",
+          "positionY": "475"
+        },
+        {
+          "description": "",
+          "positionX": "782",
+          "positionY": "487"
+        },
+        {
+          "description": "",
+          "positionX": "815",
+          "positionY": "591"
+        },
+        {
+          "description": "",
+          "positionX": "879",
+          "positionY": "495"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica życia",
+      "color": "#FFF700",
+      "markers": [
+        {
+          "description": "+15 życia",
+          "positionX": "287",
+          "positionY": "538"
+        },
+        {
+          "description": "+15 życia",
+          "positionX": "537",
+          "positionY": "394"
+        },
+        {
+          "description": "+15 życia",
+          "positionX": "474",
+          "positionY": "54"
+        },
+        {
+          "description": "+10 życia",
+          "positionX": "729",
+          "positionY": "105"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica zręczności",
+      "color": "#00FFDD",
+      "markers": [
+        {
+          "description": "+6 zręczności",
+          "positionX": "320",
+          "positionY": "535"
+        },
+        {
+          "description": "+2 zręczności",
+          "positionX": "279",
+          "positionY": "458"
+        },
+        {
+          "description": "+2 zręczności",
+          "positionX": "473",
+          "positionY": "541"
+        },
+        {
+          "description": "+2 zręczności",
+          "positionX": "742",
+          "positionY": "127"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica walki bronią dwuręczną",
+      "color": "#9000FF",
+      "markers": [
+        {
+          "description": "+6 broń dwuręczna",
+          "positionX": "308",
+          "positionY": "335"
+        },
+        {
+          "description": "+4 broń dwuręczna",
+          "positionX": "395",
+          "positionY": "711"
+        },
+        {
+          "description": "+2 broń dwuręczna",
+          "positionX": "447",
+          "positionY": "672"
+        },
+        {
+          "description": "+2 broń dwuręczna",
+          "positionX": "475",
+          "positionY": "216"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica many",
+      "color": "#1E00FF",
+      "markers": [
+        {
+          "description": "+6 mana",
+          "positionX": "458",
+          "positionY": "659"
+        },
+        {
+          "description": "+2 mana",
+          "positionX": "573",
+          "positionY": "120"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica siły",
+      "color": "#00FF9D",
+      "markers": [
+        {
+          "description": "+6 siła",
+          "positionX": "742",
+          "positionY": "152"
+        },
+        {
+          "description": "+6 siła",
+          "positionX": "490",
+          "positionY": "62"
+        },
+        {
+          "description": "+2 siła",
+          "positionX": "269",
+          "positionY": "472"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica walki bronią jednoręczną",
+      "color": "#FFA200",
+      "markers": [
+        {
+          "description": "+6 broń jednoręczna",
+          "positionX": "712",
+          "positionY": "104"
+        },
+        {
+          "description": "+2 broń jednoręczna",
+          "positionX": "728",
+          "positionY": "126"
+        },
+        {
+          "description": "+2 broń jednoręczna",
+          "positionX": "398",
+          "positionY": "629"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica łuczników",
+      "color": "#FF5900",
+      "markers": [
+        {
+          "description": "+6 strzelanie z łuku",
+          "positionX": "485",
+          "positionY": "23"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica kuszników",
+      "color": "#B002A1",
+      "markers": [
+        {
+          "description": "+6 strzelanie z kuszy",
+          "positionX": "487",
+          "positionY": "95"
+        }
+      ]
+    },
+    {
+      "title": "Stara kamienna tablica",
+      "color": "#FFFFFF",
+      "markers": [
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "272",
+          "positionY": "481"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "329",
+          "positionY": "534"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "390",
+          "positionY": "551"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "318",
+          "positionY": "647"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "385",
+          "positionY": "706"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "456",
+          "positionY": "682"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "731",
+          "positionY": "532"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "756",
+          "positionY": "468"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "670",
+          "positionY": "408"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "556",
+          "positionY": "376"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "514",
+          "positionY": "91"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "511",
+          "positionY": "86"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "506",
+          "positionY": "83"
         }
       ]
     }
   ]
-
 }

@@ -179,6 +179,307 @@
       ]
     },
     {
+      "title": "Rdest polny",
+      "color": "#7D7D7D",
+      "markers": [
+        {
+          "description": "",
+          "positionX": "45",
+          "positionY": "365"
+        },
+        {
+          "description": "",
+          "positionX": "50",
+          "positionY": "401"
+        },
+        {
+          "description": "",
+          "positionX": "158",
+          "positionY": "466"
+        },
+        {
+          "description": "",
+          "positionX": "189",
+          "positionY": "490"
+        },
+        {
+          "description": "",
+          "positionX": "213",
+          "positionY": "589"
+        },
+        {
+          "description": "",
+          "positionX": "209",
+          "positionY": "313"
+        },
+        {
+          "description": "",
+          "positionX": "222",
+          "positionY": "278"
+        },
+        {
+          "description": "",
+          "positionX": "228",
+          "positionY": "309"
+        },
+        {
+          "description": "",
+          "positionX": "249",
+          "positionY": "263"
+        },
+        {
+          "description": "",
+          "positionX": "254",
+          "positionY": "381"
+        },
+        {
+          "description": "",
+          "positionX": "277",
+          "positionY": "291"
+        },
+        {
+          "description": "",
+          "positionX": "295",
+          "positionY": "599"
+        },
+        {
+          "description": "",
+          "positionX": "316",
+          "positionY": "536"
+        },
+        {
+          "description": "",
+          "positionX": "321",
+          "positionY": "325"
+        },
+        {
+          "description": "",
+          "positionX": "349",
+          "positionY": "246"
+        },
+        {
+          "description": "",
+          "positionX": "337",
+          "positionY": "350"
+        },
+        {
+          "description": "",
+          "positionX": "368",
+          "positionY": "492"
+        },
+        {
+          "description": "",
+          "positionX": "376",
+          "positionY": "365"
+        },
+        {
+          "description": "",
+          "positionX": "363",
+          "positionY": "414"
+        },
+        {
+          "description": "",
+          "positionX": "359",
+          "positionY": "411"
+        },
+        {
+          "description": "",
+          "positionX": "421",
+          "positionY": "454"
+        },
+        {
+          "description": "",
+          "positionX": "456",
+          "positionY": "337"
+        },
+        {
+          "description": "",
+          "positionX": "486",
+          "positionY": "308"
+        },
+        {
+          "description": "",
+          "positionX": "522",
+          "positionY": "463"
+        },
+        {
+          "description": "",
+          "positionX": "552",
+          "positionY": "423"
+        },
+        {
+          "description": "",
+          "positionX": "570",
+          "positionY": "476"
+        },
+        {
+          "description": "",
+          "positionX": "511",
+          "positionY": "142"
+        },
+        {
+          "description": "",
+          "positionX": "546",
+          "positionY": "137"
+        },
+        {
+          "description": "",
+          "positionX": "594",
+          "positionY": "412"
+        },
+        {
+          "description": "",
+          "positionX": "602",
+          "positionY": "389"
+        },
+        {
+          "description": "",
+          "positionX": "627",
+          "positionY": "360"
+        },
+        {
+          "description": "",
+          "positionX": "655",
+          "positionY": "439"
+        },
+        {
+          "description": "",
+          "positionX": "628",
+          "positionY": "500"
+        },
+        {
+          "description": "",
+          "positionX": "635",
+          "positionY": "666"
+        },
+        {
+          "description": "",
+          "positionX": "632",
+          "positionY": "664"
+        },
+        {
+          "description": "",
+          "positionX": "640",
+          "positionY": "121"
+        },
+        {
+          "description": "",
+          "positionX": "654",
+          "positionY": "112"
+        },
+        {
+          "description": "",
+          "positionX": "717",
+          "positionY": "89"
+        },
+        {
+          "description": "",
+          "positionX": "768",
+          "positionY": "65"
+        },
+        {
+          "description": "",
+          "positionX": "879",
+          "positionY": "163"
+        },
+        {
+          "description": "",
+          "positionX": "871",
+          "positionY": "234"
+        },
+        {
+          "description": "",
+          "positionX": "700",
+          "positionY": "278"
+        },
+        {
+          "description": "",
+          "positionX": "803",
+          "positionY": "295"
+        },
+        {
+          "description": "",
+          "positionX": "729",
+          "positionY": "344"
+        },
+        {
+          "description": "",
+          "positionX": "710",
+          "positionY": "477"
+        },
+        {
+          "description": "",
+          "positionX": "717",
+          "positionY": "472"
+        },
+        {
+          "description": "",
+          "positionX": "741",
+          "positionY": "600"
+        },
+        {
+          "description": "",
+          "positionX": "770",
+          "positionY": "646"
+        },
+        {
+          "description": "",
+          "positionX": "782",
+          "positionY": "657"
+        },
+        {
+          "description": "",
+          "positionX": "749",
+          "positionY": "661"
+        },
+        {
+          "description": "",
+          "positionX": "732",
+          "positionY": "670"
+        },
+        {
+          "description": "",
+          "positionX": "730",
+          "positionY": "696"
+        },
+        {
+          "description": "",
+          "positionX": "891",
+          "positionY": "567"
+        },
+        {
+          "description": "",
+          "positionX": "901",
+          "positionY": "525"
+        },
+        {
+          "description": "",
+          "positionX": "922",
+          "positionY": "489"
+        },
+        {
+          "description": "",
+          "positionX": "835",
+          "positionY": "469"
+        },
+        {
+          "description": "",
+          "positionX": "838",
+          "positionY": "461"
+        },
+        {
+          "description": "",
+          "positionX": "832",
+          "positionY": "432"
+        },
+        {
+          "description": "",
+          "positionX": "842",
+          "positionY": "428"
+        }
+      ]
+    },
+    {
       "title": "Kamienna tablica życia",
       "color": "#FFF700",
       "markers": [
@@ -285,7 +586,222 @@
           "positionY": "224"
         }
       ]
+    },
+    {
+      "title": "Kamienna tablica many",
+      "color": "#1E00FF",
+      "markers": [
+        {
+          "description": "+4 mana",
+          "positionX": "212",
+          "positionY": "330"
+        },
+        {
+          "description": "+4 mana",
+          "positionX": "839",
+          "positionY": "416"
+        },
+        {
+          "description": "+2 mana",
+          "positionX": "254",
+          "positionY": "204"
+        },
+        {
+          "description": "+2 mana",
+          "positionX": "517",
+          "positionY": "508"
+        },
+        {
+          "description": "+2 mana",
+          "positionX": "631",
+          "positionY": "358"
+        },
+        {
+          "description": "+2 mana",
+          "positionX": "718",
+          "positionY": "306"
+        },
+        {
+          "description": "+2 mana",
+          "positionX": "829",
+          "positionY": "160"
+        },
+        {
+          "description": "+6 mana",
+          "positionX": "661",
+          "positionY": "109"
+        },
+        {
+          "description": "+6 mana",
+          "positionX": "855",
+          "positionY": "420"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica siły",
+      "color": "#00FF9D",
+      "markers": [
+        {
+          "description": "+4 siła",
+          "positionX": "888",
+          "positionY": "441"
+        },
+        {
+          "description": "+2 siła",
+          "positionX": "760",
+          "positionY": "557"
+        },
+        {
+          "description": "+2 siła",
+          "positionX": "473",
+          "positionY": "398"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica walki bronią jednoręczną",
+      "color": "#FFA200",
+      "markers": [
+        {
+          "description": "+4 broń jednoręczna",
+          "positionX": "55",
+          "positionY": "392"
+        },
+        {
+          "description": "+4 broń jednoręczna",
+          "positionX": "531",
+          "positionY": "175"
+        },
+        {
+          "description": "+2 broń jednoręczna",
+          "positionX": "818",
+          "positionY": "279"
+        },
+        {
+          "description": "+2 broń jednoręczna",
+          "positionX": "744",
+          "positionY": "556"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica łuczników",
+      "color": "#FF5900",
+      "markers": [
+        {
+          "description": "+4 strzelanie z łuku",
+          "positionX": "77",
+          "positionY": "377"
+        },
+        {
+          "description": "+4 strzelanie z łuku",
+          "positionX": "211",
+          "positionY": "523"
+        },
+        {
+          "description": "+4 strzelanie z łuku",
+          "positionX": "774",
+          "positionY": "666"
+        },
+        {
+          "description": "+2 strzelanie z łuku",
+          "positionX": "542",
+          "positionY": "298"
+        },
+        {
+          "description": "+2 strzelanie z łuku",
+          "positionX": "884",
+          "positionY": "122"
+        }
+      ]
+    },
+    {
+      "title": "Kamienna tablica kuszników",
+      "color": "#B002A1",
+      "markers": [
+        {
+          "description": "+4 strzelanie z kuszy",
+          "positionX": "903",
+          "positionY": "518"
+        },
+        {
+          "description": "+2 strzelanie z kuszy",
+          "positionX": "731",
+          "positionY": "194"
+        },
+        {
+          "description": "+2 strzelanie z kuszy",
+          "positionX": "863",
+          "positionY": "191"
+        }
+      ]
+    },
+    {
+      "title": "Stara kamienna tablica",
+      "color": "#FFFFFF",
+      "markers": [
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "222",
+          "positionY": "325"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "476",
+          "positionY": "394"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "468",
+          "positionY": "528"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "492",
+          "positionY": "402"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "494",
+          "positionY": "399"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "502",
+          "positionY": "392"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "550",
+          "positionY": "312"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "780",
+          "positionY": "583"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "837",
+          "positionY": "450"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "897",
+          "positionY": "204"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "828",
+          "positionY": "210"
+        },
+        {
+          "description": "Stara kamienna tablica",
+          "positionX": "852",
+          "positionY": "158"
+        }
+      ]
     }
   ]
-
 }
